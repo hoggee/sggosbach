@@ -170,7 +170,6 @@ section {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* background-color: var(--layout-clr-primary); */
   border-bottom: 1px solid var(--layout-clr-secondary);
 }
 

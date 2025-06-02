@@ -1,0 +1,5 @@
+@media (min-width: 992px) {
+  #home > .container > p {
+    margin-top: 2rem;
+  }
+}

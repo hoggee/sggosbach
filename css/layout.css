@@ -1,0 +1,67 @@
+/*
+  layout
+*/
+
+body {
+  height: 100vh;
+  font-family: var(--ff-primary);
+  font-size: clamp(16px, 1vw, 24px);
+  line-height: 1.5;
+  color: var(--text-clr-primary);
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  height: var(--nav-height);
+  z-index: 1;
+  padding-left: max(
+    calc((100% - var(--container-width)) / 2),
+    calc((100vw - var(--container-max-width)) / 2)
+  );
+  padding-right: max(
+    calc((100% - var(--container-width)) / 2),
+    calc((100vw - var(--container-max-width)) / 2)
+  );
+  background-color: var(--layout-clr-primary);
+}
+
+main {
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  scrollbar-width: none;
+  background-color: var(--layout-clr-primary);
+}
+
+section {
+  height: 100%;
+  scroll-snap-align: start;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+.media {
+  position: relative;
+  height: var(--media-height);
+  top: var(--nav-height);
+}
+
+.media > video,
+.media > img,
+.media > iframe {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.container {
+  position: relative;
+  top: var(--nav-height);
+  width: var(--container-width);
+  max-width: var(--container-max-width);
+  margin-inline: auto;
+  margin-top: 1rem;
+}

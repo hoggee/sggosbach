@@ -64,4 +64,5 @@ section {
   max-width: var(--container-max-width);
   margin-inline: auto;
   margin-top: 1rem;
+  margin-bottom: 2rem;
 }

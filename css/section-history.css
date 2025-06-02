@@ -1,0 +1,10 @@
+#history > .container > p {
+  column-count: 1;
+  hyphens: auto;
+}
+
+@media (min-width: 992px) {
+  #history > .container > p {
+    column-count: 3;
+  }
+}

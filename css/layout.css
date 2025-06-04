@@ -3,7 +3,7 @@
 */
 
 body {
-  height: 100lvh;
+  height: 100dvh;
   font-family: var(--ff-primary);
   font-size: clamp(16px, 1vw, 24px);
   line-height: 1.5;
@@ -27,7 +27,7 @@ nav {
 }
 
 main {
-  height: 100lvh;
+  height: 100%;
   overflow-x: hidden;
   overflow-y: scroll;
   scroll-behavior: smooth;
@@ -37,7 +37,7 @@ main {
 }
 
 section {
-  height: 100lvh;
+  height: 100%;
   scroll-snap-align: start;
   overflow-y: scroll;
   scrollbar-width: none;

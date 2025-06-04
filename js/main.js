@@ -79,7 +79,9 @@ const observer = new IntersectionObserver(
 );
 
 // preload
-window.addEventListener("load", hidePreload());
+document.addEventListener("DOMContentLoaded", (event) => {
+  hidePreload();
+});
 
 // observe intersections
 sections.forEach((section) => {

@@ -3,7 +3,7 @@
 */
 
 body {
-  height: 100vh;
+  height: 100lvh;
   font-family: var(--ff-primary);
   font-size: clamp(16px, 1vw, 24px);
   line-height: 1.5;

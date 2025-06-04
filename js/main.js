@@ -1,3 +1,4 @@
+const preload = document.querySelector(".preload");
 const navbarNav = document.querySelector(".navbar-nav");
 const navItems = document.querySelectorAll(".nav-item");
 const navNews = navItems[0];
@@ -10,6 +11,10 @@ const navbarToggler = document.querySelector(".navbar-toggler");
 const menuIcon = document.querySelector(".menu-icon");
 const closeIcon = document.querySelector(".close-icon");
 const sections = document.querySelectorAll("section");
+
+const hidePreload = () => {
+  preload.setAttribute("aria-hidden", true);
+};
 
 const navbarExpanded = () => {
   return navbarNav.getAttribute("aria-expanded");
@@ -72,6 +77,9 @@ const observer = new IntersectionObserver(
     threshold: 0.85,
   }
 );
+
+// preload
+window.addEventListener("load", hidePreload());
 
 // observe intersections
 sections.forEach((section) => {

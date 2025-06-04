@@ -63,6 +63,6 @@ section {
   width: var(--container-width);
   max-width: var(--container-max-width);
   margin-inline: auto;
-  margin-top: 1rem;
-  margin-bottom: 5rem;
+  margin-top: var(--container-margin-top);
+  margin-bottom: var(--container-margin-bottom);
 }

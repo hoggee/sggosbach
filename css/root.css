@@ -30,5 +30,7 @@
   --container-height: calc(100vh - var(--nav-height));
   --container-width: 90%;
   --container-max-width: 1366px;
+  --container-margin-top: 1rem;
+  --container-margin-bottom: 5rem;
   --media-height: calc(50% - var(--nav-height));
 }

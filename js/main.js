@@ -81,7 +81,7 @@ const observer = new IntersectionObserver(
   }
 );
 
-// preload video on section "home"
+// preload videoHome
 preloadVideoHome();
 
 // observe intersections

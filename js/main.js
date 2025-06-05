@@ -1,3 +1,6 @@
+const media = document.querySelector(".media");
+const videos = document.getElementsByTagName("video");
+const images = document.getElementsByTagName("img");
 const preload = document.querySelector(".preload");
 const navbarNav = document.querySelector(".navbar-nav");
 const navItems = document.querySelectorAll(".nav-item");
@@ -11,6 +14,27 @@ const navbarToggler = document.querySelector(".navbar-toggler");
 const menuIcon = document.querySelector(".menu-icon");
 const closeIcon = document.querySelector(".close-icon");
 const sections = document.querySelectorAll("section");
+
+const mediaLoaded = () => {
+  let remainingVideos = videos.length;
+  let remainingImages = images.length;
+
+  for (const video of remainingVideos) {
+    video.addEventListener("load", () => {
+      remainingVideos--;
+    });
+  }
+
+  for (const image of remainingImages) {
+    image.addEventListener("load", () => {
+      remainingImages--;
+    });
+  }
+
+  if (remainingVideos === 0 && remainingImages === 0) {
+    console.log("hi");
+  }
+};
 
 const hidePreload = () => {
   preload.setAttribute("aria-hidden", true);
@@ -79,9 +103,9 @@ const observer = new IntersectionObserver(
 );
 
 // preload
-document.addEventListener("DOMContentLoaded", (event) => {
+window.onload = () => {
   hidePreload();
-});
+};
 
 // observe intersections
 sections.forEach((section) => {
@@ -111,3 +135,6 @@ document.addEventListener("click", (event) => {
     truncateNavbar();
   }
 });
+
+console.log(images.length);
+console.log(videos.length);

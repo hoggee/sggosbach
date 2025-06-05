@@ -15,7 +15,9 @@ const sections = document.querySelectorAll("section");
 
 const preloadVideoHome = () => {
   videoHome.addEventListener("loadeddata", () => {
-    preload.setAttribute("aria-hidden", true);
+    if (videoHome.readyState === HTMLMediaElement.HAVE_ENOUGH_DATA) {
+      preload.setAttribute("aria-hidden", true);
+    }
   });
 };
 

@@ -1,7 +1,5 @@
-const media = document.querySelector(".media");
-const videos = document.getElementsByTagName("video");
-const images = document.getElementsByTagName("img");
 const preload = document.querySelector(".preload");
+const videoHome = document.getElementsByTagName("video")[0];
 const navbarNav = document.querySelector(".navbar-nav");
 const navItems = document.querySelectorAll(".nav-item");
 const navNews = navItems[0];
@@ -15,29 +13,10 @@ const menuIcon = document.querySelector(".menu-icon");
 const closeIcon = document.querySelector(".close-icon");
 const sections = document.querySelectorAll("section");
 
-const mediaLoaded = () => {
-  let remainingVideos = videos.length;
-  let remainingImages = images.length;
-
-  for (const video of remainingVideos) {
-    video.addEventListener("load", () => {
-      remainingVideos--;
-    });
-  }
-
-  for (const image of remainingImages) {
-    image.addEventListener("load", () => {
-      remainingImages--;
-    });
-  }
-
-  if (remainingVideos === 0 && remainingImages === 0) {
-    console.log("hi");
-  }
-};
-
-const hidePreload = () => {
-  preload.setAttribute("aria-hidden", true);
+const preloadVideoHome = () => {
+  videoHome.addEventListener("loadeddata", () => {
+    preload.setAttribute("aria-hidden", true);
+  });
 };
 
 const navbarExpanded = () => {
@@ -102,10 +81,8 @@ const observer = new IntersectionObserver(
   }
 );
 
-// preload
-window.onload = () => {
-  hidePreload();
-};
+// preload video on section "home"
+preloadVideoHome();
 
 // observe intersections
 sections.forEach((section) => {
@@ -135,6 +112,3 @@ document.addEventListener("click", (event) => {
     truncateNavbar();
   }
 });
-
-console.log(images.length);
-console.log(videos.length);

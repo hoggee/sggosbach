@@ -57,23 +57,33 @@ const observer = new IntersectionObserver(
 
       if (entry.isIntersecting === true) {
         switch (entry.target.id) {
+          case "home":
+            resetNavItems();
+            sections[0].scrollTo({ top: 0, behavior: "smooth" });
+            break;
           case "news":
             setNavItem(navNews);
+            sections[1].scrollTo({ top: 0, behavior: "smooth" });
             break;
           case "about":
             setNavItem(navAbout);
+            sections[2].scrollTo({ top: 0, behavior: "smooth" });
             break;
           case "history":
             setNavItem(navHistory);
+            sections[3].scrollTo({ top: 0, behavior: "smooth" });
             break;
           case "gallery":
             setNavItem(navGallery);
+            sections[4].scrollTo({ top: 0, behavior: "smooth" });
             break;
           case "contact":
             setNavItem(navContact);
+            sections[5].scrollTo({ top: 0, behavior: "smooth" });
             break;
           case "legal":
             setNavItem(navLegal);
+            sections[6].scrollTo({ top: 0, behavior: "smooth" });
             break;
           default:
             resetNavItems();
@@ -87,7 +97,7 @@ const observer = new IntersectionObserver(
   }
 );
 
-// check videoHome
+// preload / check videoHome
 checkVideoHome();
 
 // observe intersections

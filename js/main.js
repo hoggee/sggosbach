@@ -13,10 +13,16 @@ const menuIcon = document.querySelector(".menu-icon");
 const closeIcon = document.querySelector(".close-icon");
 const sections = document.querySelectorAll("section");
 
-const preloadVideoHome = () => {
-  videoHome.addEventListener("loadeddata", () => {
+const checkVideoHome = () => {
+  var checkReadyState = setInterval(() => {
+    if (videoHome.readyState >= 3) {
+      preload.setAttribute("aria-hidden", true);
+      clearInterval(checkReadyState);
+    }
+  }, 500);
+  /* videoHome.addEventListener("loadeddata", () => {
     preload.setAttribute("aria-hidden", true);
-  });
+  }); */
 };
 
 const navbarExpanded = () => {
@@ -81,8 +87,8 @@ const observer = new IntersectionObserver(
   }
 );
 
-// preload videoHome
-preloadVideoHome();
+// check videoHome
+checkVideoHome();
 
 // observe intersections
 sections.forEach((section) => {

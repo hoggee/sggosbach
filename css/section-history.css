@@ -4,6 +4,10 @@
 }
 
 @media (min-width: 992px) {
+  #history > .media > img {
+    object-position: 50% 30%;
+  }
+
   #history > .container > p {
     column-count: 3;
   }

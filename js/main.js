@@ -7,7 +7,8 @@ const navAbout = navItems[1];
 const navHistory = navItems[2];
 const navGallery = navItems[3];
 const navContact = navItems[4];
-const navLegal = navItems[5];
+const navLegalNotice = navItems[5];
+const navDataProtection = navItems[6];
 const navbarToggler = document.querySelector(".navbar-toggler");
 const menuIcon = document.querySelector(".menu-icon");
 const closeIcon = document.querySelector(".close-icon");
@@ -81,9 +82,13 @@ const observer = new IntersectionObserver(
             setNavItem(navContact);
             sections[5].scrollTo({ top: 0, behavior: "smooth" });
             break;
-          case "legal":
-            setNavItem(navLegal);
+          case "legal-notice":
+            setNavItem(navLegalNotice);
             sections[6].scrollTo({ top: 0, behavior: "smooth" });
+            break;
+          case "data-protection":
+            setNavItem(navDataProtection);
+            sections[7].scrollTo({ top: 0, behavior: "smooth" });
             break;
           default:
             resetNavItems();

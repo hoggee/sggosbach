@@ -1,5 +1,5 @@
 body {
   height: 100dvh;
-  font-family: var(--ff-primary);
-  background: var(--clr-primary-900);
+  font-family: var(--ff-secondary);
+  background: var(--layout-clr-primary);
 }

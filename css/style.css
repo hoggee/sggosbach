@@ -1,0 +1,8 @@
+@import "_fonts.css";
+@import "_root.css";
+
+body {
+  height: 100dvh;
+  font-family: var(--ff-primary);
+  background: lightslategray;
+}

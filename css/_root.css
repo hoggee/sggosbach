@@ -1,0 +1,22 @@
+:root {
+  /* fonts */
+  --ff-primary-400: "Roboto-Regular";
+  --ff-primary-500: "Roboto-Medium";
+  --ff-primary-italic-400: "Roboto-Italic";
+  --ff-primary-italic-500: "Roboto-MediumItalic";
+  --ff-secondary-700: "UnifrakturCook-Bold";
+
+  /* colors */
+  --clr-primary-100: #f8f9fa;
+  --clr-primary-200: #e9ecef;
+  --clr-primary-300: #dee2e6;
+  --clr-primary-400: #ced4da;
+  --clr-primary-500: #adb5bd;
+  --clr-primary-600: #6c757d;
+  --clr-primary-700: #495057;
+  --clr-primary-800: #343a40;
+  --clr-primary-900: #212529;
+
+  /* layout */
+  --ff-primary: var(--ff-primary-400);
+}

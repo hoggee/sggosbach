@@ -54,7 +54,4 @@ section {
 .container {
   position: relative;
   top: var(--nav-height);
-  width: var(--container-width);
-  max-width: var(--container-max-width);
-  margin-inline: auto;
 }

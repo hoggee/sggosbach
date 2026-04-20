@@ -1,6 +1,8 @@
 body {
   height: 100dvh;
   font-family: var(--ff-primary);
+  line-height: 1.5;
+  color: var(--text-clr-primary);
   background: var(--layout-clr-primary);
 }
 
@@ -37,6 +39,18 @@ section {
   scrollbar-width: none;
 }
 
+/* main {
+  height: 100dvh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  scrollbar-width: none;
+  background-color: var(--layout-clr-primary);
+}
+
+
+
 .media {
   position: relative;
   height: var(--media-height);
@@ -54,4 +68,4 @@ section {
 .container {
   position: relative;
   top: var(--nav-height);
-}
+} */

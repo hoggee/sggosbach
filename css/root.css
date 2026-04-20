@@ -34,5 +34,5 @@
   --container-max-width: 1366px;
   --container-margin-top: 1rem;
   --container-margin-bottom: 5rem;
-  --media-height: calc(50% - var(--nav-height));
+  --media-height: calc(50dvh - var(--nav-height));
 }

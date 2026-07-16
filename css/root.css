@@ -20,19 +20,17 @@
   /* layout */
   --ff-primary: var(--ff-primary-400);
   --ff-primary-accent: var(--ff-primary-500);
-  --ff-primary-italic: var(--ff-primary-italic-400);
-  --ff-primary-italic-accent: var(--ff-primary-italic-400);
   --ff-secondary: var(--ff-secondary-700);
   --text-clr-primary: var(--clr-primary-900);
   --text-clr-secondary: var(--clr-primary-600);
   --layout-clr-primary: var(--clr-primary-100);
   --layout-clr-secondary: var(--clr-primary-400);
-  --nav-height: max(8dvh, 50px);
-  --navbar-nav-height: calc(100dvh - var(--nav-height));
-  --container-height: calc(100dvh - var(--nav-height));
+  --nav-height: max(8vh, 50px);
+  --navbar-nav-height: calc(100vh - var(--nav-height));
+  --container-height: calc(100vh - var(--nav-height));
   --container-width: 90%;
   --container-max-width: 1366px;
   --container-margin-top: 1rem;
   --container-margin-bottom: 5rem;
-  --media-height: calc(50dvh - var(--nav-height));
+  --media-height: calc(50% - var(--nav-height));
 }

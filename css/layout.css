@@ -1,14 +1,14 @@
 body {
   height: 100dvh;
   font-family: var(--ff-primary);
+  font-size: clamp(16px, 1vw, 24px);
   line-height: 1.5;
   color: var(--text-clr-primary);
-  background: var(--layout-clr-primary);
 }
 
 nav {
   position: fixed;
-  width: 100dvw;
+  width: 100%;
   height: var(--nav-height);
   z-index: 1;
   padding-left: max(
@@ -23,7 +23,7 @@ nav {
 }
 
 main {
-  height: 100dvh;
+  height: 100%;
   overflow-x: hidden;
   overflow-y: scroll;
   scroll-behavior: smooth;
@@ -33,23 +33,11 @@ main {
 }
 
 section {
-  height: 100dvh;
+  height: 100%;
   scroll-snap-align: start;
   overflow-y: scroll;
   scrollbar-width: none;
 }
-
-/* main {
-  height: 100dvh;
-  overflow-x: hidden;
-  overflow-y: scroll;
-  scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;
-  scrollbar-width: none;
-  background-color: var(--layout-clr-primary);
-}
-
-
 
 .media {
   position: relative;
@@ -68,4 +56,16 @@ section {
 .container {
   position: relative;
   top: var(--nav-height);
-} */
+  width: var(--container-width);
+  max-width: var(--container-max-width);
+  margin-inline: auto;
+  margin-top: var(--container-margin-top);
+  margin-bottom: var(--container-margin-bottom);
+}
+
+.container > h1,
+.container > h2,
+.container > h3 {
+  padding-top: 0.2rem;
+  padding-bottom: 0.1rem;
+}

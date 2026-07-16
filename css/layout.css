@@ -61,6 +61,7 @@ section {
   margin-inline: auto;
   margin-top: var(--container-margin-top);
   margin-bottom: var(--container-margin-bottom);
+  overflow-wrap: break-word;
 }
 
 .container > h1,

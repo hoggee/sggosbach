@@ -30,6 +30,7 @@ section {
     height: 100vh;
     scroll-snap-align: start;
     overflow-y: scroll;
+    overscroll-behavior: none;
     scrollbar-width: none;
 }
 

@@ -63,31 +63,24 @@ const observer = new IntersectionObserver(
                         break;
                     case "news":
                         setNavItem(navNews);
-                        sections[1].scrollTo({ top: 0, behavior: "smooth" });
                         break;
                     case "about":
                         setNavItem(navAbout);
-                        sections[2].scrollTo({ top: 0, behavior: "smooth" });
                         break;
                     case "history":
                         setNavItem(navHistory);
-                        sections[3].scrollTo({ top: 0, behavior: "smooth" });
                         break;
                     case "gallery":
                         setNavItem(navGallery);
-                        sections[4].scrollTo({ top: 0, behavior: "smooth" });
                         break;
                         case "contact":
                         setNavItem(navContact);
-                        sections[5].scrollTo({ top: 0, behavior: "smooth" });
                         break;
                     case "legal-notice":
                         setNavItem(navLegalNotice);
-                        sections[6].scrollTo({ top: 0, behavior: "smooth" });
                         break;
                     case "data-protection":
                         setNavItem(navDataProtection);
-                        sections[7].scrollTo({ top: 0, behavior: "smooth" });
                         break;
                     default:
                         resetNavItems();

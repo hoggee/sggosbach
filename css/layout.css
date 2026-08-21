@@ -4,7 +4,6 @@ html {
     line-height: 1.5;
     color: var(--text-clr-primary);
     scroll-behavior: smooth;
-    overscroll-behavior: none;
     scroll-snap-type: y mandatory;
     scrollbar-width: none;
     background-color: var(--layout-clr-primary);
@@ -29,8 +28,8 @@ nav {
 section {
     height: 100vh;
     scroll-snap-align: start;
+    scroll-snap-stop: always;
     overflow-y: scroll;
-    overscroll-behavior: none;
     scrollbar-width: none;
 }
 

@@ -60,7 +60,6 @@ const observer = new IntersectionObserver(
                 switch (entry.target.id) {
                     case "home":
                         resetNavItems();
-                        sections[0].scrollTo({ top: 0, behavior: "smooth" });
                         break;
                     case "news":
                         setNavItem(navNews);

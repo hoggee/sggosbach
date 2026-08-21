@@ -6,6 +6,7 @@ html {
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
     scrollbar-width: none;
+    overscroll-behavior-y: none;
     background-color: var(--layout-clr-primary);
 }
 
@@ -31,6 +32,7 @@ section {
     scroll-snap-stop: always;
     overflow-y: scroll;
     scrollbar-width: none;
+    overscroll-behavior-y: auto;
 }
 
 .media {

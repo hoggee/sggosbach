@@ -53,5 +53,6 @@ section {
     top: var(--nav-height);
     margin-inline: auto;
     word-wrap: break-word;
-    margin-top: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }

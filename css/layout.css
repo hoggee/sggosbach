@@ -4,6 +4,7 @@ html {
     line-height: 1.5;
     color: var(--text-clr-primary);
     scroll-behavior: smooth;
+    overscroll-behavior: none;
     scroll-snap-type: y mandatory;
     scrollbar-width: none;
     background-color: var(--layout-clr-primary);

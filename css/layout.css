@@ -4,7 +4,7 @@ html {
     line-height: 1.5;
     color: var(--text-clr-primary);
     scroll-behavior: smooth;
-    scroll-snap-type: y proximity;
+    scroll-snap-type: y mandatory;
     scrollbar-width: none;
     background-color: var(--layout-clr-primary);
 }
@@ -29,7 +29,6 @@ section {
     height: 100vh;
     scroll-snap-align: start;
     overflow-y: scroll;
-    scroll-behavior: smooth;
     scrollbar-width: none;
 }
 

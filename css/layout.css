@@ -4,7 +4,7 @@ html {
     line-height: 1.5;
     color: var(--text-clr-primary);
     scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;
+    scroll-snap-type: y proximity;
     scrollbar-width: none;
     background-color: var(--layout-clr-primary);
 }

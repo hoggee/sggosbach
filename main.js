@@ -13,6 +13,7 @@ const navbarToggler = document.querySelector(".navbar-toggler");
 const menuIcon = document.querySelector(".menu-icon");
 const closeIcon = document.querySelector(".close-icon");
 const sections = document.querySelectorAll("section");
+const container = document.querySelectorAll(".container");
 
 const checkVideoHome = () => {
     var checkReadyState = setInterval(() => {
@@ -98,7 +99,7 @@ const observer = new IntersectionObserver(
         });
     },
     {
-    threshold: 0.85,
+    threshold: 1,
     }
 );
 
@@ -132,4 +133,9 @@ document.addEventListener("click", (event) => {
     )   {
         truncateNavbar();
     }
+});
+
+// handle scroll events
+sections[0].addEventListener("scroll", () => {
+    console.log("scrolled");
 });

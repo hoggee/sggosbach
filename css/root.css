@@ -25,6 +25,7 @@
   --text-clr-secondary: var(--clr-primary-600);
   --layout-clr-primary: var(--clr-primary-100);
   --layout-clr-secondary: var(--clr-primary-400);
+  --accent-clr-primary: var(--clr-primary-700);
   --nav-height: max(8dvh, 50px);
   --navbar-nav-height: calc(100dvh - var(--nav-height));
   --media-height: calc(50% - var(--nav-height));

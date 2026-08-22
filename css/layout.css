@@ -3,7 +3,7 @@ html {
     font-size: clamp(16px, 1vw, 24px);
     line-height: 1.5;
     color: var(--text-clr-primary);
-    scroll-behavior: smooth;
+    /* scroll-behavior: smooth; */
     scroll-snap-type: y mandatory;
     scrollbar-width: none;
     background-color: var(--layout-clr-primary);
@@ -30,7 +30,7 @@ section {
     scroll-snap-align: start;
     scroll-snap-stop: always;
     overflow-y: scroll;
-    scroll-behavior: smooth;
+    /* scroll-behavior: smooth; */
     scrollbar-width: none;
 }
 

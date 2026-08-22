@@ -99,7 +99,7 @@ const observer = new IntersectionObserver(
         });
     },
     {
-    threshold: 1,
+        threshold: 0.9,
     }
 );
 
@@ -133,9 +133,4 @@ document.addEventListener("click", (event) => {
     )   {
         truncateNavbar();
     }
-});
-
-// handle scroll events
-sections[0].addEventListener("scroll", () => {
-    console.log("scrolled");
 });

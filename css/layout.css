@@ -53,6 +53,7 @@ section {
 .container {
     position: relative;
     top: var(--nav-height);
+    height: var(--container-height);
     width: var(--container-width);
     max-width: var(--container-max-width);
     margin-inline: auto

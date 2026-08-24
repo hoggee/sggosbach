@@ -27,6 +27,7 @@
   --layout-clr-secondary: var(--clr-primary-400);
   --nav-height: max(8dvh, 50px);
   --navbar-nav-height: calc(100dvh - var(--nav-height));
+  --container-height: 50dvh;
   --container-width: 90%;
   --container-max-width: 1366px;
   --media-height: calc(50% - var(--nav-height));

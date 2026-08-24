@@ -19,29 +19,28 @@
 
   /* layout */
   --ff-primary: var(--ff-primary-400);
+  --text-clr-primary: var(--clr-primary-900);
+  --layout-clr-primary: var(--clr-primary-100);
+  --nav-height: max(8dvh, 50px);
+  --container-width: 90%;
+  --container-max-width: 1366px;
+  --media-height: calc(50% - var(--nav-height));
+} 
+
+
+  /* layout */
+  /* --ff-primary: var(--ff-primary-400);
   --ff-primary-accent: var(--ff-primary-500);
   --ff-secondary: var(--ff-secondary-700);
   --text-clr-primary: var(--clr-primary-900);
   --text-clr-secondary: var(--clr-primary-600);
   --layout-clr-primary: var(--clr-primary-100);
   --layout-clr-secondary: var(--clr-primary-400);
-  --accent-clr-primary: var(--clr-primary-700);
-  --nav-height: max(8dvh, 50px);
-  --navbar-nav-height: calc(100dvh - var(--nav-height));
-  --media-height: calc(50% - var(--nav-height));
-  --container-width: 90dvw;
+  --nav-height: max(8vh, 50px);
+  --navbar-nav-height: calc(100vh - var(--nav-height));
+  --container-height: calc(100vh - var(--nav-height));
+  --container-width: 90%;
   --container-max-width: 1366px;
-  --container-height: 50dvh;
-
-  
-
-  
-
-  
-
-  /* --container-margin-top: 1rem;
-  --container-margin-bottom: 5rem; */
-    /* --navbar-nav-height: calc(100vh - var(--nav-height)); */
-    /* --ff-primary-accent: var(--ff-primary-500);
-  --ff-secondary: var(--ff-secondary-700); */
-}
+  --container-margin-top: 1rem;
+  --container-margin-bottom: 5rem;
+  --media-height: calc(50% - var(--nav-height)); */

@@ -34,6 +34,9 @@ section {
     height: 100dvh;
     scroll-snap-align: start;
     scroll-snap-stop: always;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
 }
 
 .media {

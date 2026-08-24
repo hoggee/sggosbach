@@ -31,7 +31,7 @@ main {
 }
 
 section {
-    height: 100dvh;
+    min-height: 100%;
     scroll-snap-align: start;
     scroll-snap-stop: always;
     overflow-y: scroll;

@@ -4,6 +4,10 @@ html {
     line-height: 1.5;
     color: var(--text-clr-primary);
     background-color: var(--layout-clr-primary);
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
 }
 
 nav {
@@ -20,14 +24,6 @@ nav {
         calc((100dvw - var(--container-max-width)) / 2)
     );
     background-color: var(--layout-clr-primary);
-}
-
-main {
-    height: 100dvh;
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;
-    scroll-behavior: smooth;
-    scrollbar-width: none;
 }
 
 section {

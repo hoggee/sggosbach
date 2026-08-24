@@ -4,6 +4,9 @@ html {
     line-height: 1.5;
     color: var(--text-clr-primary);
     background-color: var(--layout-clr-primary);
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
 }
 
 nav {
@@ -20,13 +23,6 @@ nav {
         calc((100dvw - var(--container-max-width)) / 2)
     );
     background-color: var(--layout-clr-primary);
-}
-
-.main {
-    height: 100lvh;
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;
-    scroll-behavior: smooth;
 }
 
 section {
@@ -55,7 +51,6 @@ section {
 .container {
     position: relative;
     top: var(--nav-height);
-    height: var(--container-height);
     width: var(--container-width);
     max-width: var(--container-max-width);
     margin-inline: auto

@@ -19,9 +19,14 @@
 
   /* layout */
   --ff-primary: var(--ff-primary-400);
+  --ff-primary-accent: var(--ff-primary-500);
+  --ff-secondary: var(--ff-secondary-700);
   --text-clr-primary: var(--clr-primary-900);
+  --text-clr-secondary: var(--clr-primary-600);
   --layout-clr-primary: var(--clr-primary-100);
+  --layout-clr-secondary: var(--clr-primary-400);
   --nav-height: max(8dvh, 50px);
+  --navbar-nav-height: calc(100dvh - var(--nav-height));
   --container-width: 90%;
   --container-max-width: 1366px;
   --media-height: calc(50% - var(--nav-height));

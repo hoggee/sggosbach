@@ -55,9 +55,8 @@ section {
     top: var(--nav-height);
     width: var(--container-width);
     max-width: var(--container-max-width);
-    height: var(--container-height-small);
-    padding-top: var(--container-padding);
-    padding-bottom: var(--container-padding);
+    padding-top: var(--container-padding-top);
+    padding-bottom: var(--container-padding-bottom);
     margin-inline: auto;
     word-wrap: break-word;
 }
@@ -65,9 +64,5 @@ section {
 @media (min-width: 992px) {
     .media {
         height: var(--media-height-large);
-    }
-
-    .container {
-        height: var(--container-height-large);
     }
 }

@@ -27,9 +27,8 @@
   --layout-clr-secondary: var(--clr-primary-400);
   --container-width: 90vw;
   --container-max-width: 1366px;
-  --container-height-small: 62vh;
-  --container-height-large: 38vh;
-  --container-padding: 1rem;
+  --container-padding-top: 1rem;
+  --container-padding-bottom: 4rem;
   --nav-height: max(8lvh, 50px);
   --nav-padding: max(calc((100% - var(--container-width)) / 2), calc((100vw - var(--container-max-width)) / 2));
   --navbar-nav-height: calc(100vh - var(--nav-height));

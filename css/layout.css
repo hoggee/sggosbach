@@ -36,9 +36,11 @@ section {
 .media {
     position: relative;
     width: 100vw;
-    height: var(--media-height);
+    height: var(--media-height-small);
     top: var(--nav-height);
 }
+
+
 
 .media > video,
 .media > img,
@@ -53,9 +55,19 @@ section {
     top: var(--nav-height);
     width: var(--container-width);
     max-width: var(--container-max-width);
-    height: var(--container-height);
+    height: var(--container-height-small);
     padding-top: var(--container-padding);
     padding-bottom: var(--container-padding);
     margin-inline: auto;
     word-wrap: break-word;
+}
+
+@media (min-width: 992px) {
+    .media {
+        height: var(--media-height-large);
+    }
+
+    .container {
+        height: var(--container-height-large);
+    }
 }

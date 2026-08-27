@@ -69,8 +69,5 @@ section {
 
     .container {
         height: var(--container-height-large);
-        display: flex;
-        flex-direction: column;
-        align-content: center;
     }
 }

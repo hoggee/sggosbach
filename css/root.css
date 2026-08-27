@@ -25,28 +25,10 @@
   --text-clr-secondary: var(--clr-primary-600);
   --layout-clr-primary: var(--clr-primary-100);
   --layout-clr-secondary: var(--clr-primary-400);
+  --container-width: 90lvw;
+  --container-max-width: 1366px;
+  --conatiner-height: 62lvh;
   --nav-height: max(8lvh, 50px);
-  --navbar-nav-height: calc(100lvh - var(--nav-height));
-  --container-height: 50lvh;
-  --container-width: 90%;
-  --container-max-width: 1366px;
-  --media-height: calc(50lvh - var(--nav-height));
+  --nav-padding: max(calc((100% - var(--container-width)) / 2), calc((100lvw - var(--container-max-width)) / 2));
+  --media-height: calc(38lvh - var(--nav-height));
 } 
-
-
-  /* layout */
-  /* --ff-primary: var(--ff-primary-400);
-  --ff-primary-accent: var(--ff-primary-500);
-  --ff-secondary: var(--ff-secondary-700);
-  --text-clr-primary: var(--clr-primary-900);
-  --text-clr-secondary: var(--clr-primary-600);
-  --layout-clr-primary: var(--clr-primary-100);
-  --layout-clr-secondary: var(--clr-primary-400);
-  --nav-height: max(8vh, 50px);
-  --navbar-nav-height: calc(100vh - var(--nav-height));
-  --container-height: calc(100vh - var(--nav-height));
-  --container-width: 90%;
-  --container-max-width: 1366px;
-  --container-margin-top: 1rem;
-  --container-margin-bottom: 5rem;
-  --media-height: calc(50% - var(--nav-height)); */

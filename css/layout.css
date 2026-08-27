@@ -11,14 +11,8 @@ nav {
     height: var(--nav-height);
     width: 100dvw;
     z-index: 1;
-    padding-left: max(
-        calc((100% - var(--container-width)) / 2),
-        calc((100dvw - var(--container-max-width)) / 2)
-    );
-    padding-right: max(
-        calc((100% - var(--container-width)) / 2),
-        calc((100dvw - var(--container-max-width)) / 2)
-    );
+    padding-left: var(--nav-padding);
+    padding-right: var(--nav-padding);
     background-color: var(--layout-clr-primary);
 }
 
@@ -27,19 +21,18 @@ main {
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
+    scrollbar-width: none;
 }
 
 section {
     height: 100lvh;
     scroll-snap-align: start;
     scroll-snap-stop: always;
-    overflow-y: scroll;
-    scroll-behavior: smooth;
-    scrollbar-width: none;
 }
 
 .media {
     position: relative;
+    width: 100lvw;
     height: var(--media-height);
     top: var(--nav-height);
 }
@@ -55,8 +48,11 @@ section {
 .container {
     position: relative;
     top: var(--nav-height);
-    height: var(--container-height);
     width: var(--container-width);
     max-width: var(--container-max-width);
-    margin-inline: auto
+    height: var(--container-height);
+    margin-inline: auto;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
 }

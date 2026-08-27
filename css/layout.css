@@ -9,7 +9,7 @@ html {
 nav {
     position: fixed;
     height: var(--nav-height);
-    width: 100dvw;
+    width: 100vw;
     z-index: 1;
     padding-left: var(--nav-padding);
     padding-right: var(--nav-padding);
@@ -17,7 +17,7 @@ nav {
 }
 
 main {
-    height: 100lvh;
+    height: 100vh;
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
@@ -25,14 +25,17 @@ main {
 }
 
 section {
-    height: 100lvh;
+    height: 100vh;
     scroll-snap-align: start;
     scroll-snap-stop: always;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
 }
 
 .media {
     position: relative;
-    width: 100lvw;
+    width: 100vw;
     height: var(--media-height);
     top: var(--nav-height);
 }
@@ -51,8 +54,8 @@ section {
     width: var(--container-width);
     max-width: var(--container-max-width);
     height: var(--container-height);
+    padding-top: var(--container-padding);
+    padding-bottom: var(--container-padding);
     margin-inline: auto;
-    overflow-y: scroll;
-    scroll-behavior: smooth;
-    scrollbar-width: none;
+    word-wrap: break-word;
 }

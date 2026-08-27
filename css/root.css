@@ -25,10 +25,11 @@
   --text-clr-secondary: var(--clr-primary-600);
   --layout-clr-primary: var(--clr-primary-100);
   --layout-clr-secondary: var(--clr-primary-400);
-  --container-width: 90lvw;
+  --container-width: 90vw;
   --container-max-width: 1366px;
-  --conatiner-height: 62lvh;
+  --conatiner-height: 62vh;
+  --container-padding: 1rem;
   --nav-height: max(8lvh, 50px);
-  --nav-padding: max(calc((100% - var(--container-width)) / 2), calc((100lvw - var(--container-max-width)) / 2));
-  --media-height: calc(38lvh - var(--nav-height));
-} 
+  --nav-padding: max(calc((100% - var(--container-width)) / 2), calc((100vw - var(--container-max-width)) / 2));
+  --media-height: calc(38vh - var(--nav-height));
+}

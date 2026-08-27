@@ -31,5 +31,6 @@
   --container-padding: 1rem;
   --nav-height: max(8lvh, 50px);
   --nav-padding: max(calc((100% - var(--container-width)) / 2), calc((100vw - var(--container-max-width)) / 2));
+  --navbar-nav-height: calc(100vh - var(--nav-height));
   --media-height: calc(38vh - var(--nav-height));
 }

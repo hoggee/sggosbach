@@ -5,10 +5,6 @@
     border-bottom: 1px solid var(--layout-clr-secondary);
 }
 
-.navbar[aria-required="false"] {
-    opacity: .85;
-}
-
 .navbar > .navbar-brand {
     height: 100%;
     display: flex;

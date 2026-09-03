@@ -36,7 +36,7 @@ section {
 .media {
     position: relative;
     width: 100vw;
-    height: var(--media-height-small);
+    height: var(--media-height);
     top: var(--nav-height);
 }
 
@@ -59,10 +59,4 @@ section {
     padding-bottom: var(--container-padding-bottom);
     margin-inline: auto;
     word-wrap: break-word;
-}
-
-@media (min-width: 992px) {
-    .media {
-        height: var(--media-height-large);
-    }
 }

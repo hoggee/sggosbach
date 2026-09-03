@@ -1,5 +1,6 @@
 const preload = document.querySelector(".preload");
 const videoHome = document.getElementsByTagName("video")[0];
+const navbar = document.querySelector(".navbar");
 const navbarNav = document.querySelector(".navbar-nav");
 const navItems = document.querySelectorAll(".nav-item");
 const navNews = navItems[0];
@@ -24,6 +25,14 @@ const checkVideoHome = () => {
   /* videoHome.addEventListener("loadeddata", () => {
     preload.setAttribute("aria-hidden", true);
   }); */
+};
+
+const setNavbar = () => {
+  navbar.setAttribute("aria-required", true);
+};
+
+const resetNavbar = () => {
+  navbar.setAttribute("aria-required", false);
 };
 
 const navbarExpanded = () => {
@@ -59,38 +68,47 @@ const observer = new IntersectionObserver(
       if (entry.isIntersecting === true) {
         switch (entry.target.id) {
           case "home":
+            resetNavbar();
             resetNavItems();
             sections[0].scrollTo({ top: 0, behavior: "smooth" });
             break;
           case "news":
+            setNavbar();
             setNavItem(navNews);
             sections[1].scrollTo({ top: 0, behavior: "smooth" });
             break;
           case "about":
+            setNavbar();
             setNavItem(navAbout);
             sections[2].scrollTo({ top: 0, behavior: "smooth" });
             break;
           case "history":
+            setNavbar();
             setNavItem(navHistory);
             sections[3].scrollTo({ top: 0, behavior: "smooth" });
             break;
           case "gallery":
+            setNavbar();
             setNavItem(navGallery);
             sections[4].scrollTo({ top: 0, behavior: "smooth" });
             break;
           case "contact":
+            setNavbar();
             setNavItem(navContact);
             sections[5].scrollTo({ top: 0, behavior: "smooth" });
             break;
           case "legal-notice":
+            setNavbar();
             setNavItem(navLegalNotice);
             sections[6].scrollTo({ top: 0, behavior: "smooth" });
             break;
           case "data-protection":
+            setNavbar();
             setNavItem(navDataProtection);
             sections[7].scrollTo({ top: 0, behavior: "smooth" });
             break;
           default:
+            setNavbar();
             resetNavItems();
             break;
         }

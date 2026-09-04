@@ -6,24 +6,20 @@
 
 #home > .media {
     grid-area: content;
-    width: 100%;
-    height: 100%;
-    top: 0;
+    width: 100vw;
+    height: calc(100vh - var(--nav-height));
 }
 
 #home > .container {
     grid-area: content;
     width: 100vw;
-    max-width: 100vw;
-    height: 100vh;
-    top: 0;
-    overflow: hidden;
+    height: 20vh;
+    top: 40vh;
     padding-top: 0;
     padding-bottom: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
 }
 
 #home > .container::before {
@@ -31,19 +27,11 @@
     position: absolute;
     height: 20vh;
     width: inherit;
-    top: 40vh;
-    background-color: white;
-    opacity: 0.8;
+    background-color: var(--layout-clr-primary);
+    opacity: 0.5;
 }
 
 #home > .container > h1 {
-    z-index: 1;
     font-family: var(--ff-secondary);
-}
-
-.navbar[aria-required="false"],
-.navbar[aria-required="false"] > .navbar-nav {
-    background-color: white;
-    opacity: 0.8;
-    z-index: 10;
+    z-index: 1;
 }

@@ -1,34 +1,37 @@
 #home {
+    height: 100lvh;
     display: grid;
     grid-template-areas: 
         "content";
+    overflow-y: hidden;
 }
 
 #home > .media {
     grid-area: content;
     width: 100vw;
-    height: calc(100vh - var(--nav-height));
+    height: calc(100lvh - var(--nav-height));
 }
 
 #home > .container {
     grid-area: content;
     width: 100vw;
-    height: 20vh;
-    top: 40vh;
+    height: 20lvh;
+    top: 40lvh;
     padding-top: 0;
     padding-bottom: 0;
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
 #home > .container::before {
     content: '';
     position: absolute;
-    height: 20vh;
+    height: 20lvh;
     width: inherit;
     background-color: var(--layout-clr-primary);
-    opacity: 0.5;
+    opacity: 0.4;
 }
 
 #home > .container > h1 {

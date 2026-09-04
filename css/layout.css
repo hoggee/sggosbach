@@ -3,7 +3,6 @@ html {
     font-size: clamp(16px, 1vw, 24px);
     line-height: 1.5;
     color: var(--text-clr-primary);
-    background-color: var(--layout-clr-primary);
 }
 
 nav {

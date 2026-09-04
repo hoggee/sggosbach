@@ -12,6 +12,10 @@
     height: calc(100vh - var(--nav-height));
 }
 
+#home > .media > video {
+    object-position: 60% 100%;
+}
+
 #home > .container {
     grid-area: content;
     width: 100vw;
@@ -31,7 +35,7 @@
     height: 20vh;
     width: inherit;
     background-color: var(--layout-clr-primary);
-    opacity: 0.4;
+    opacity: 0.5;
 }
 
 #home > .container > h1 {

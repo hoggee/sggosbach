@@ -1,5 +1,5 @@
 #home {
-    height: 100lvh;
+    height: 100vh;
     display: grid;
     grid-template-areas: 
         "content";
@@ -9,14 +9,14 @@
 #home > .media {
     grid-area: content;
     width: 100vw;
-    height: calc(100lvh - var(--nav-height));
+    height: calc(100vh - var(--nav-height));
 }
 
 #home > .container {
     grid-area: content;
     width: 100vw;
-    height: 20lvh;
-    top: 40lvh;
+    height: 20vh;
+    top: 40vh;
     padding-top: 0;
     padding-bottom: 0;
     display: flex;
@@ -28,7 +28,7 @@
 #home > .container::before {
     content: '';
     position: absolute;
-    height: 20lvh;
+    height: 20vh;
     width: inherit;
     background-color: var(--layout-clr-primary);
     opacity: 0.4;

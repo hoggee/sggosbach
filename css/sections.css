@@ -9,17 +9,11 @@
 #home > .media {
     grid-area: content;
     height: 100%;
-    top: 0;
 }
 
 #home > .container {
     grid-area: content;
-    top: 0;
     padding: 2rem;
     background-color: var(--layout-clr-primary);
-    opacity: 0.4;
-}
-
-.navbar {
-    opacity: 0.4;
+    opacity: 0.8;
 }

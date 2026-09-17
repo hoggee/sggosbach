@@ -4,43 +4,25 @@ html {
     line-height: 1.5;
     color: var(--text-clr-primary);
     background-color: var(--layout-clr-primary);
+    scrollbar-width: none;
+    scroll-behavior: smooth;
 }
 
 nav {
     position: fixed;
-    height: var(--nav-height);
     width: 100vw;
+    height: var(--nav-height);
     z-index: 1;
     padding-left: var(--nav-padding);
     padding-right: var(--nav-padding);
     background-color: var(--layout-clr-primary);
 }
 
-main {
-    height: 100vh;
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;
-    scroll-behavior: smooth;
-    scrollbar-width: none;
-}
-
-section {
-    height: 100%;
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
-    overflow-y: scroll;
-    scroll-behavior: smooth;
-    scrollbar-width: none;
-}
-
 .media {
     position: relative;
-    width: 100vw;
     height: var(--media-height);
     top: var(--nav-height);
 }
-
-
 
 .media > video,
 .media > img,
@@ -52,6 +34,7 @@ section {
 
 .container {
     position: relative;
+    min-height: var(--container-min-height);
     top: var(--nav-height);
     width: var(--container-width);
     max-width: var(--container-max-width);

@@ -1,0 +1,28 @@
+.preload[aria-hidden="false"] {
+  position: absolute;
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--layout-clr-primary);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.preload[aria-hidden="true"] {
+  display: none;
+}
+
+.preload > img {
+  height: 20vh;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  50% {
+    rotate: y 90deg;
+  }
+  100% {
+    rotate: y 0deg;
+  }
+}

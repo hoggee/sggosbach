@@ -15,17 +15,17 @@ const sections = document.querySelectorAll("section");
 
 
 // preload
-const checkVideoHome = () => {
-  var checkReadyState = setInterval(() => {
-    if (videoHome.readyState >= 3) {
-      preload.setAttribute("aria-hidden", true);
-      clearInterval(checkReadyState);
-    }
-  }, 500);
-  /* videoHome.addEventListener("loadeddata", () => {
-    preload.setAttribute("aria-hidden", true);
-  }); */
-};
+// const checkVideoHome = () => {
+//   var checkReadyState = setInterval(() => {
+//     if (videoHome.readyState >= 3) {
+//       preload.setAttribute("aria-hidden", true);
+//       clearInterval(checkReadyState);
+//     }
+//   }, 500);
+//   /* videoHome.addEventListener("loadeddata", () => {
+//     preload.setAttribute("aria-hidden", true);
+//   }); */
+// };
 
 // navbar
 const navbarNavExpanded = () => {

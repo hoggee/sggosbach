@@ -59,7 +59,11 @@ const setNavItem = (navItem) => {
 //
 
 // preload
-checkVideoHome();
+document.onreadystatechange = () => {
+  if (document.readyState === "complete") {
+    preload.setAttribute("aria-hidden", true);
+  }
+};
 
 // handle click events
 document.addEventListener("click", (event) => {

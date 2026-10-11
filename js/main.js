@@ -1,33 +1,11 @@
-// preload
-const preload = document.querySelector(".preload");
-const videoHome = document.getElementsByTagName("video")[0];
-
-// navbar
-const navbar = document.querySelector(".navbar");
+const navbarBrand = document.querySelector(".navbar-brand");
 const navbarNav = document.querySelector(".navbar-nav");
 const navItems = document.querySelectorAll(".nav-item");
 const navbarToggler = document.querySelector(".navbar-toggler");
 const menuIcon = document.querySelector(".menu-icon");
 const closeIcon = document.querySelector(".close-icon");
-
-// sections
 const sections = document.querySelectorAll("section");
 
-
-// preload
-// const checkVideoHome = () => {
-//   var checkReadyState = setInterval(() => {
-//     if (videoHome.readyState >= 3) {
-//       preload.setAttribute("aria-hidden", true);
-//       clearInterval(checkReadyState);
-//     }
-//   }, 500);
-//   /* videoHome.addEventListener("loadeddata", () => {
-//     preload.setAttribute("aria-hidden", true);
-//   }); */
-// };
-
-// navbar
 const navbarNavExpanded = () => {
   return navbarNav.getAttribute("aria-expanded");
 };
@@ -42,43 +20,49 @@ const truncateNavbarNav = () => {
   navbarToggler.setAttribute("aria-selected", false);
 };
 
-const resetNavItems = () => {
-  navItems.forEach((navItem) => {
-    navItem.setAttribute("aria-selected", false);
+const scrollToSection = (section) => {
+  section.scrollIntoView({
+    block: "start",
+    behavior: "smooth",
   });
 };
 
-const setNavItem = (navItem) => {
-  resetNavItems();
-  navItem.setAttribute("aria-selected", true);
-};
-
-
-//
-//  MAIN
-//
-
-// preload
-document.onreadystatechange = () => {
-  if (document.readyState === "complete") {
-    preload.setAttribute("aria-hidden", true);
-  }
-};
-
-// handle click events
+/*
+  click events
+*/
 document.addEventListener("click", (event) => {
-  console.log(event.target);
+    // menu icon
+    if (event.target.isEqualNode(menuIcon)) {
+        expandNavbarNav();
+    }
 
-  // navbar
-  const isNavbarNav = event.target.isEqualNode(navbarNav);
-  const isMenuIcon = event.target.isEqualNode(menuIcon);
-  const isCloseIcon = event.target.isEqualNode(closeIcon);
+    // close icon
+    if (event.target.isEqualNode(closeIcon) || (
+            navbarNavExpanded() === "true" && 
+            event.target.isEqualNode(menuIcon) === false && 
+            event.target.isEqualNode(navbarNav) === false
+        )) {
+        truncateNavbarNav();
+    }
 
-  if (isMenuIcon === true) {
-    expandNavbarNav();
-  }
+    // navbarBrand
+    if (event.target.isEqualNode(navbarBrand)) {
+        if (document.URL.includes("legal-notice") || document.URL.includes("data-protection")) {
+            location.href = "../index.html";
+        } else {
+            scrollToSection(sections[0]);
+        }
+    }
 
-  if (isCloseIcon === true || (navbarNavExpanded() === "true" && isMenuIcon === false && isNavbarNav === false)) {
-    truncateNavbarNav();
-  }
+    // nav-items
+    if (event.target.classList.contains("nav-item")) {
+        const sectionString = "#" + event.target.id.toString().slice(4);
+        const section = document.querySelector(sectionString);
+
+        if (document.URL.includes("legal-notice") || document.URL.includes("data-protection")) {
+            location.href = "../index.html";
+        } else {
+            scrollToSection(section); 
+        }       
+    }
 });

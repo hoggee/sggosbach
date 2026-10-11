@@ -3,28 +3,26 @@ html {
     line-height: 1.5;
     color: var(--text-clr-primary);
     background-color: var(--layout-clr-primary);
-    overflow-y: scroll;
-    scroll-behavior: smooth;
     scrollbar-width: none;
 }
 
-nav {
+header {
     position: fixed;
-    width: 100%;
-    height: var(--nav-height);
-    padding-left: var(--nav-padding);
-    padding-right: var(--nav-padding);
+    width: 100vw;
+    height: var(--header-height);
+    padding-left: var(--header-padding);
+    padding-right: var(--header-padding);
     background-color: var(--layout-clr-primary);
     border-bottom: 1px solid var(--layout-clr-secondary);
-    z-index: 1;
+    z-index: 10;
 }
 
 section {
     min-height: 100vh;
-    padding-top: var(--nav-height);
+    padding-top: var(--header-height);
     animation: appear linear;
     animation-timeline: view();
-    animation-range: entry 0 cover calc(100vh - var(--nav-height));
+    animation-range: entry 0 cover calc(100vh - var(--header-height));
 }
 
 .media {
@@ -44,8 +42,14 @@ section {
     width: var(--container-width);
     max-width: var(--container-max-width);
     margin-inline: auto;
-    padding-block: 1rem;
+    padding-block: var(--container-padding-block);
     word-wrap: break-word;
+}
+
+footer {
+    border-top: 1px solid var(--layout-clr-secondary);
+    padding-left: var(--header-padding);
+    padding-right: var(--header-padding);
 }
 
 @keyframes appear {

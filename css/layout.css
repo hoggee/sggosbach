@@ -50,6 +50,7 @@ footer {
     border-top: 1px solid var(--layout-clr-secondary);
     padding-left: var(--header-padding);
     padding-right: var(--header-padding);
+    background-color: var(--layout-clr-primary);
 }
 
 @keyframes appear {
